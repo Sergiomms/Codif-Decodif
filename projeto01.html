@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./projeto01.css">
+    <title>Projeto Mod 02</title>
+</head>
+<body>
+
+    <div id="container">
+
+        <h2 class="titulo1">DIGITE SEU TEXTO PARA SER CODIFICADO OU DECODIFICADO DE ACORDO COM A SUA ESCOLHA:</h2>
+        <textarea name="texto" id="recebeMsg" cols="30" rows="10"></textarea>
+        <br>
+        <form class="escolheCod" id="escolheRegra">
+            
+            <p>Escolha a Regra abaixo:</p>
+            <br>
+            <select name="select" id="select">
+                <option value="escolher" checked>Selecionar...</option>
+                <option value="base64">Base64</option>
+                <option value="cifraDeCesar">Cifra de César</option>
+            </select>
+            <br><br>
+            <div id="cifraIncremento" class="incrementoInvisivel">
+                <p id="cifraIncrementoP" class="incrementoInvisivel">Digite o incremento para a cifra abaixo:</p>
+                <input type="number" placeholder="Digite o incremento" id="inputVlr">
+            </div>
+        
+        </form>
+        <br>
+        <form class="escolheCod" id="escolheCod">
+            <div>
+                <p>Escolha Codificar ou Decodificar abaixo:</p>
+                <br>
+                <input type="radio" id="codificar" name="tipoCod">
+                <label for="codificar">Codificar</label>
+
+                <input type="radio" id="decodificar" name="tipoCod">
+                <label for="decodificar">Decodificar</label>
+            </div>
+            <br>
+            <div id="div1">
+                <button id="rodar" class="rodar invisivel"></button>
+                <button id="rodar1" class="rodar invisivel"></button>
+            </div>
+        </form>
+        <br>
+        <textarea name="texto" id="mostraMsg" class="mostraMsgInv" cols="30" rows="10"></textarea>
+        <br><br>
+
+
+    </div>
+    
+    <!-- <script src="./projeto01.js"></script> -->
+    <script src="./projeto01-02.js"></script>
+    <!-- <script src="./projeto01-03.js"></script> -->
+
+</body>
+</html>
